@@ -20,4 +20,5 @@ std::string Instancer::run()
 	Lexer lex(stringToConcat);
 	Parser pars(lex.tokenize(),inter.getVariables());//.. which is then parsed and converted into an array of statements...
 	inter.interpret(pars.parse(inter.getLabels()));//.. which is then interpreted and ran
+	return "";
 }
